@@ -29,8 +29,14 @@ X = [ones(m, 1) X];
 %       are in rows, then, you can use max(A, [], 2) to obtain the max 
 %       for each row.
 %       
+printf('size of p is : ')
+size(p)
+
+result =  X * all_theta';%  5000 * 401   times 401 * 10
 
 
+%the second return value is the max val index , this is what we want 
+[pro,p]  = max( result ,[],2);
 
 
 

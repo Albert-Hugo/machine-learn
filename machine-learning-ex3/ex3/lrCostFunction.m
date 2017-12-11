@@ -59,12 +59,12 @@ J = (1/m) * sum(left - right) +  rg;
 
 %end
 
-grad(1) = (1/m) * sum( X(:,1)' * (z - y)  ) 
+grad(1) = (1/m) * sum( X(:,1)' * (z - y)  ) ;
 
-r =  (lambda / m ) * theta(2:end)
-( (1/m) *  X(:,2:end)' *  (z - y)  ) 
-grad2 =( (1/m) * ( X(:,2:end)' *  (z - y)  )) + r
-grad(2:end) = grad2
+r =  (lambda / m ) * theta(2:end);
+%( (1/m) *  X(:,2:end)' *  (z - y)  ) 
+grad2 =( (1/m) * ( X(:,2:end)' *  (z - y)  )) + r;
+grad(2:end) = grad2;
 
 
 
